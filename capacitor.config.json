@@ -1,0 +1,9 @@
+{
+  "appId": "com.eldoria.cronicas",
+  "appName": "Crónicas de Eldoria",
+  "webDir": "www",
+  "bundledWebRuntime": false,
+  "android": {
+    "allowMixedContent": false
+  }
+}

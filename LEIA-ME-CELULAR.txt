@@ -1,0 +1,19 @@
+CRÓNICAS DE ELDORIA — PROJETO ANDROID (BUILD NA NUVEM PELO CELULAR)
+
+Este pacote prepara o projeto para gerar um APK de teste usando GitHub Actions. Não é ainda um APK pronto e não foi publicado na Play Store.
+
+PASSOS PELO CELULAR:
+1. Extraia este ZIP no celular (ou envie o ZIP para um repositório GitHub e extraia os arquivos no repositório; o GitHub não executa workflow a partir de ZIP guardado sem os arquivos na raiz).
+2. Crie um repositório no GitHub chamado cronicas-de-eldoria.
+3. Envie TODOS os arquivos e pastas deste pacote para a raiz do repositório, preservando .github/workflows/android-apk.yml e a pasta www.
+4. Abra a aba Actions do repositório.
+5. Se aparecer, confirme que permite Actions. Abra “Build Android APK” e toque em “Run workflow”. Também inicia automaticamente quando fizer push para main.
+6. Aguarde o workflow ficar verde. Abra a execução, vá em Artifacts e baixe “cronicas-de-eldoria-apk”. Extraia o ZIP baixado e instale app-debug.apk no Android (talvez seja necessário permitir instalação desta fonte).
+
+IMPORTANTE SOBRE MULTIPLAYER:
+- O APK usa arquivos locais e ainda precisa do servidor multiplayer publicado em uma hospedagem Node.js.
+- O endereço do servidor ainda não foi configurado no jogo. Após publicar o servidor, é necessário configurar window.ELDORIA_SERVER_URL com a URL HTTPS pública antes de gerar novo APK.
+- Não compartilhe credenciais ou chaves privadas no repositório.
+
+PLAY STORE:
+- O APK debug serve para teste. Para publicar, será necessário gerar um Android App Bundle (.aab) assinado com uma chave de upload, configurar a ficha do app e cumprir os requisitos atuais da Play Console. Este pacote ainda não produz um AAB de lançamento assinado.
